@@ -4,19 +4,18 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>meteor.js - Reactive Web Framework</title>
+		<title>Meteor, The JavaScript App Platform.</title>
 
-		<meta name="description" content="Tech Lancaster presentation on meteor.js">
+		<meta name="description" content="Meteor Talk at Sydney Ultimo TAFE 2015">
 		<meta name="author" content="Rob Fisher">
-
+		<meta name="author" content="Mark C Mitchell">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
-
+		<link rel="stylesheet" href="css/custom.css">
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -43,157 +42,169 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>meteor.js</h1>
-					<h3>A Reactive Web Framework</h3>
+					<h1>Meteor</h1>
+					<h3>The JavaScript App Platform.</h3>
+					<hr>
+
 					<p>
-						<small>Created by <a href="http://www.robfisher.us">Rob Fisher</a> / <a href="http://twitter.com/bler">@bler</a></small>
+						<small>Talk by <a href="http://www.markcmitchell.net">Mark C Mitchell</a> | <a href="http://twitter.com/zlot">@zlot</a></small>
+					</p>
+					<p>
+						<small>Slides originally created by <a href="http://www.robfisher.us">Rob Fisher</a> / <a href="http://twitter.com/bler">@bler</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>What Is Meteor?</h2>
-					<p>
-						meteor.js is a reactive web <em>framework</em> for quickly building powerful single page web applications.  A new development environment to take the pain out of building apps for the web.
-					</p>
+					<h2>Me</h2>
+					<hr>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<p>Creative Technologist for <a href="http://www.themonkeyscobbler.com.au">The Monkey's Cobbler</a>
+					</p>
+					<hr>
+
+					<p>Teacher of Web-Based Technologies here at Ultimo<br>(HTML, CSS, Design, Usability, Accessibility)
+					</p>
+					<hr>
+
+					<p>Interactive Media Artist
+					</p>
+					<hr>
+
+					<p>Co-founder of an interactive media arts meetup group, coming soon …
+					</p>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>What Is Meteor?</h2>
+					<hr>
+					<p class='fragment'>Meteor is a complete, open source platform for building web and mobile apps in pure JavaScript.	</p>
+					<hr>
+
+					<p class='fragment'>It is a new development environment to take the pain out of building apps for the web.</p>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
 						<h2>Why Meteor?</h2>
-						<ul>
-							<li>Pure Javascript</li>
-							<li>Live Page Updates</li>
-							<li>Clean, powerful data synchronization</li>
-							<li>Latency compensation</li>
-							<li>Hot Code Pushes</li>
-							<li>Sensitive Code Protection</li>
-							<li>Self-Contained app 'bundles'</li>
-							<li>Interoperability</li>
-							<li>Smart Packages</li>
-							<li>And more...</li>
-						</ul>
+						<hr>
+						<h4>One language everywhere</h4>
+						<p>The same code, written in the same language, can run on both client and server.
+						<p>
+					</section>
+
+					<section>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Pure Javascript</h4>
+						<p>Master One Single Language</p>
+						<p>Learn One Set of APIs / Libraries</p>
+						<p>Learn One Development Environment</p>
+						<p>Code Can Run on Client or Server</p>
 					</section>
 					<section>
-						<h2>Pure Javascript</h2>
-						<ul>
-							<li>Master One Single Language</li>
-							<li>Learn One Set of APIs/Libraries</li>
-							<li>Learn One Development Environment/Tooling</li>
-							<li>Code Can Run on Client or Server</li>
-						</ul>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Live Updates</h4>
+						<p>Data updates live on the screen as it changes.</p>
 					</section>
+
 					<section>
-						<h2>Live Page Updates</h2>
-						<p>Routing and Rendering Logic abstracted away behind a sensible framework.
-						  Just write custom logic and meteor does the rest.</p>
-						<ul>
-							<li>Powerful View Templating</li>
-							<li>URL Based Routing</li>
-							<li>Automatic Single Page View Updating</li>
-						</ul>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Ultra Responsive</h4>
+						<p>Changes made by a user are instantly visible, without the unprofessional laggy feeling that would result from waiting for a round trip to the server.</p>
 					</section>
+
 					<section>
-						<h2>Clean, Powerful Data Synchronization</h2>
-						<ul>
-							<li>Client code that looks as though it were running on the server and had direct access to the database.  Free your code from REST endpoints.</li>
-							<li>Client has a temporary slice of server data.  Writes are local and automatically synchronized to server.</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Latency Compensation</h2>
-						<p>Because data is written locally then synchronized remotely the application feels immediate despite bandwidth concerns.  Screen updates are immediate w/o having to wait for the server.</p>
-					</section>
-					<section>
-						<h2>Hot Code Pushes</h2>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Hot Code Pushes</h4>
 						<p>No system downtime.  When new code is released it is automatically injected into existing clients.  No refreshing, no reconnecting, no hassles.</p>
 					</section>
 					<section>
-						<h2>Sensitive Code Protection</h2>
-						<p>Take control of your Javascript code.  UI code runs in the browser but sensitive code runs in privileged environemnt on the server.</p>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Sensitive Code Protection</h4>
+						<p>Client UI code runs in the browser.<p>
+						<p>Sensitive code runs in a privileged environment on the server.</p>
+						<p>Best practices are baked right into the framework. </p>
 					</section>
 					<section>
-						<h2>Self-Contained App "Bundles"</h2>
-						<p><strong>Modular Design: </strong>One command to package an entire app.  One command to unpack and 'install' your app wherever <code>node.js</code> is installed.  Choose the hosting environment your comfortable with.</p>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Modular design</h4>
+						<p>Modularity of packages encourage best-practice coding, and make adding new features ultra-simple.</p>
+						<p>Command-line app is a build tool that builds all parts of your app.</p>
 					</section>
 					<section>
-						<h2>Interoperability</h2>
-						<p>Data store is by default <code>mongoDB</code> but simple DDP protocol means you can get meteor to run anywhere with any backend.</p>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Database integration</h4>
+						<p>A <code>mongoDB</code> database is automatically hooked up on server-side, and magically reactive on the front-end.</p>
 					</section>
 					<section>
-						<h2>Smart Packages</h2>
-						<p>The meteor core is a tiny set of minimal packages to get meteor going.  Replace handlebars with your preferred templating engine.  Add smart packages to client and/or server code.  Package management is a breeze with meteorite!</p>
+						<h2>Why Meteor?</h2>
+						<hr>
+						<h4>Accounts</h4>
+						<p>A complete user account system that you can drop <br>into your application.</p>
+						<p>With one line of code you can have login/logout, account creation, email validation, and login with Facebook, Twitter, etc.</p>
 					</section>
 				</section>
 
 				<section>
 					<h2>Installation</h2>
-					<h3>Setup is a breeze.  One simple command installs meteor and dependencies</h3>
+					<hr>
+					<h4>One simple command installs meteor and dependencies!</h4>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 						$ curl https://install.meteor.com/ | sh
+					</code></pre>
+					<hr>
+					<p>Scared of the command line? Don't be!</p>
+				</section>
+
+				<section>
+					<h2>Package Management</h2>
+					<hr>
+					<h4>Adding packages is easy</h4>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+$ meteor add bootstrap
+$ meteor add accounts-ui
+$ meteor add fortawesome:fontawesome
+$ meteor add jeremy:velocity-animate
 					</code></pre>
 				</section>
 
 				<section>
 					<h2>Start A New Project</h2>
-					<h3>One command to bootstrap a new project!</h3>
+					<hr>
+					<h4>One command to bootstrap a new project!</h4>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-$ meteor create projectName
+$ meteor create name-of-project
 $ cd meteor
 $ meteor
 					</code></pre>
 				</section>
 
 				<section>
-					<h2>Package Management</h2>
-					<h3>Adding/Removing packages is easy</h3>
+					<h2>Meteor in action</h2>
+					<hr>
+					<p>Meteor comes with complete sample projects useful <br>for getting started.</p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-$ meteor add bootstrap
-$ meteor add accounts-ui
-$ meteor add insecure
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Mobile Support?</h2>
-					<h3>Writing Apps for Mobile is Just as Easy</h3>
-					<p></p>
-				</section>
-
-				<section>
-					<h2>Mobile Support?</h2>
-					<h3>Writing Apps for Mobile is Just as Easy</h3>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-$ meteor install-sdk ios
-$ meteor install-sdk android
-$ meteor add-platform ios
-$ meteor add-platform android
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Shut Up.  Give Us Code!</h2>
-					<p>meteor.js comes with complete sample projects useful for getting started</p>
-					<pre><code data-trm contenteditable style="font-size: 18px; margin-top: 20px;">
 $ meteor create --example todo
 					</code></pre>
+
 				</section>
 
 				<section>
-					<h2>Conclusions</h2>
-					<p>meteor.js is a web framework that takes the pain out of writting web applications.
-					An entire set of tools to write the parts of your application that make your application yours and
-					makes the plumbing as simple as possible.</p>
-					<p>Visit <a href="http://www.meteor.com/">meteor's project page</a> for more information.
-				</section>
-
-				<section>
-					<h1>Questions?</h1>
-					<h3>by Rob Fisher</h3>
+					<h2>Conclusion</h2>
+					<hr>
+					<p>Meteor is a web framework that takes the pain out of writting web applications.</p>
+					<p>
+					An entire set of tools to write a reactive web app, that makes the plumbing as simple as possible.</p>
+					<p>Visit <a href="http://www.meteor.com/">Meteor</a> for more info.
 				</section>
 
 			</div>
@@ -212,10 +223,8 @@ $ meteor create --example todo
 				progress: true,
 				history: true,
 				center: true,
-				transition: 'fade',
-
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
